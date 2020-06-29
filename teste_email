@@ -1,0 +1,15 @@
+function enviar() {
+  let email = document.querySelector(".email").value;
+
+  let arrayEmail = email.split("@");
+
+  if (arrayEmail[1] === "gmail.com" || "hotmail.com" || "outlook.com") {
+    alert("Este e-mail pode ser utilizado");
+  } else {
+    alert("Este email não pode ser utilizado");
+  }
+}
+
+let botao = document.querySelector("button");
+
+botao.addEventListener("click", enviar);
